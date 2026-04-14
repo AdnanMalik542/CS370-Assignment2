@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+</head>
+<body>
+    <h2>Upload File</h2>
+
+    <p>Allowed file types: .txt, .csv, .xml, .html, .java</p>
+    <p>Maximum file size: 2 MB</p>
+
+    <form action="FileUploadServlet" method="post" enctype="multipart/form-data">
+        Select File to Upload:
+        <input type="file" name="fileName" accept=".txt,.csv,.xml,.html,.java" required>
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <br>
+    <a href="ViewFilesServlet">View Files Stored in Database</a>
+</body>
+</html>
